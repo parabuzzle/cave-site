@@ -36,11 +36,11 @@ function App() {
               <Grid.Col span={6}>
                 <Text size="lg">
                   Hello my name is Mike Heijmans and I'm in search of a property
-                  with a cave! If you have a property with a cave and you're
-                  you'd like to sell it, I'm interested in buying it from you.
-                  It has been a dream of mine to own a property with a cave for
-                  a long time. If you have a property with a cave and you're
-                  interested in selling it, please reach out to me.
+                  with a cave! If you have a property with a cave and you'd like
+                  to sell it, I'm interested in buying it from you! It has been
+                  a dream of mine to own a property with a cave for a long time.
+                  If you have a property with a cave and you're interested in
+                  selling it, please reach out to me.
                 </Text>
               </Grid.Col>
             </Grid>
