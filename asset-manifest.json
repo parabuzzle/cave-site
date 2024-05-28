@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cave-site/static/css/main.f855e6bc.css",
-    "main.js": "/cave-site/static/js/main.47fa22b2.js",
-    "static/js/453.0ae609a0.chunk.js": "/cave-site/static/js/453.0ae609a0.chunk.js",
-    "static/media/logo.svg": "/cave-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/cave-site/index.html",
-    "main.f855e6bc.css.map": "/cave-site/static/css/main.f855e6bc.css.map",
-    "main.47fa22b2.js.map": "/cave-site/static/js/main.47fa22b2.js.map",
-    "453.0ae609a0.chunk.js.map": "/cave-site/static/js/453.0ae609a0.chunk.js.map"
+    "main.css": "/static/css/main.f855e6bc.css",
+    "main.js": "/static/js/main.fbc421e8.js",
+    "static/js/453.0ae609a0.chunk.js": "/static/js/453.0ae609a0.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
+    "main.fbc421e8.js.map": "/static/js/main.fbc421e8.js.map",
+    "453.0ae609a0.chunk.js.map": "/static/js/453.0ae609a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.47fa22b2.js"
+    "static/js/main.fbc421e8.js"
   ]
 }
