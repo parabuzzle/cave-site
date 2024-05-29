@@ -1,14 +1,38 @@
-import { Text, Paper, Title, Grid, Box, Container, Image } from "@mantine/core";
+import {
+  Text,
+  Paper,
+  Title,
+  Grid,
+  Box,
+  Container,
+  Image,
+  Group,
+  Button,
+  Anchor,
+} from "@mantine/core";
 
+import {
+  IconMail,
+  IconBrandInstagram,
+  IconBrandFacebook,
+} from "@tabler/icons-react";
 import { useViewportSize } from "@mantine/hooks";
 
 function App() {
-  const { height } = useViewportSize();
+  const { height, width } = useViewportSize();
 
   return (
     <>
-      <Box maw="100%" mx="auto" bg="blue" h="800">
-        <Box h={height * 0.25}></Box>
+      <Box
+        maw="100%"
+        mx="auto"
+        style={{
+          background:
+            "linear-gradient(45deg, rgba(0,96,196,1) 0%, rgba(0,185,255,1) 100%)",
+        }}
+        h={width < 950 ? 500 : 800}
+      >
+        <Box h={width < 950 ? 100 : height * 0.25}></Box>
         <Title
           c="white"
           style={{ fontSize: "4em", textAlign: "center" }}
@@ -30,10 +54,10 @@ function App() {
         <Container>
           <Paper bg="blue.0" padding="lg" p="xl">
             <Grid>
-              <Grid.Col span={6}>
+              <Grid.Col span={{ base: 12, md: 6 }}>
                 <Image radius="md" src="/mike-underwater.jpg" alt="Mike" />
               </Grid.Col>
-              <Grid.Col span={6}>
+              <Grid.Col span={{ base: 12, md: 6 }}>
                 <Text size="lg">
                   Hello my name is Mike Heijmans and I'm in search of a property
                   with a cave! If you have a property with a cave and you'd like
@@ -42,6 +66,44 @@ function App() {
                   If you have a property with a cave and you're interested in
                   selling it, please reach out to me.
                 </Text>
+                <Group mt="xl" justify="center" grow>
+                  <Anchor href="mailto:parabuzzle@gmail.com?subject=I have a cave for you!">
+                    <Button
+                      fullWidth
+                      color="pink"
+                      variant="filled"
+                      leftSection={<IconMail />}
+                    >
+                      Email me
+                    </Button>
+                  </Anchor>
+                  <Anchor
+                    href="https://instagram.com/parabuzzle"
+                    target="_blank"
+                  >
+                    <Button
+                      fullWidth
+                      color="pink"
+                      variant="filled"
+                      leftSection={<IconBrandInstagram />}
+                    >
+                      Instagram
+                    </Button>
+                  </Anchor>
+                  <Anchor
+                    href="https://facebook.com/parabuzzle"
+                    target="_blank"
+                  >
+                    <Button
+                      fullWidth
+                      color="pink"
+                      variant="filled"
+                      leftSection={<IconBrandFacebook />}
+                    >
+                      Facebook
+                    </Button>
+                  </Anchor>
+                </Group>
               </Grid.Col>
             </Grid>
           </Paper>
