@@ -9,8 +9,8 @@ import {
   Group,
   Button,
   Anchor,
+  Center,
 } from "@mantine/core";
-
 import {
   IconMail,
   IconBrandInstagram,
@@ -112,6 +112,11 @@ function App() {
           </Text>
         </Container>
       </Box>
+      <Center>
+        <Text m="xl" size="sm">
+          copyright &copy; 2024 Mike Heijmans
+        </Text>
+      </Center>
     </>
   );
 }
